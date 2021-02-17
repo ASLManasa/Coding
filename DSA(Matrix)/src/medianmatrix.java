@@ -20,9 +20,14 @@ public class medianmatrix {
         }
        Arrays.sort(matrix);
         int n = matrix.length;
-       if(matrix.length %2 ==0)
+       if(matrix.length %2 !=0)
        {
            System.out.print(matrix[n/2]);
+       }
+       else
+       {
+           int result = ((matrix[(n/2)-1]+matrix[n/2])/2);
+           System.out.print(result);
        }
     }
 }
