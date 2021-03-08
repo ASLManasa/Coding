@@ -2,19 +2,21 @@ import java.util.Scanner;
 
 public class recuringchar {
     public static String recur(String s) {
-        char[] arr1 = s.toCharArray();
-        char[] arr2 = new char[arr1.length];
-        for (int i = 0; i < arr1.length; i++) {
-            for (int j = i + 1; j < arr1.length; j++) {
-                for (int k = 0; k < arr2.length; k++) {
-                    if (arr1[i] == arr1[j]) {
-                        arr2[k] = arr1[j];
-                    }
-                }
+        char [] chars = s.toCharArray();
+        char prev = '\0';
+        int k = 0;
+
+        for (char c: chars)
+        {
+            if (prev != c)
+            {
+                chars[k++] = c;
+                prev = c;
             }
         }
-        String valuefinal = arr2.toString();
-        return valuefinal;
+
+        return new String(chars).substring(0, k);
+
     }
 
     public static void main(String[] args) {
