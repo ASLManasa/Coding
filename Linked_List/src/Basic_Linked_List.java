@@ -12,5 +12,14 @@ public class Basic_Linked_List
         System.out.println(ll);
         System.out.println(ll.getFirst());
         System.out.println(ll.getLast());
+
+        LinkedList<Integer> link = new LinkedList<>();
+        for(int i =0;i<5;i++)
+        {
+            link.add(i);
+        }
+        System.out.println(link);
+        System.out.println(link.size());
+
     }
 }
