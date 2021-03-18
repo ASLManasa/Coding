@@ -10,5 +10,8 @@ public class Basic_Arraylist
         a.add(9);
         a.add(12);
         System.out.println(a);
+        System.out.println(a.get(0));
+        a.set(0,4);
+        System.out.println(a);
     }
 }
