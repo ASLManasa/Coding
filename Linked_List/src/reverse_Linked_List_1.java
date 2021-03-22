@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.*;
 
-public class reverse_Linked_List
+public class reverse_Linked_List_1
 {
     public static class node
 {
