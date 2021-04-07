@@ -1,21 +1,16 @@
 import java.util.Vector;
-import java.util.*;
 
 public class Basic_vector
 {
     public static void main(String [] args)
     {
-        Vector<String> vec = new Vector<>(2);
-        vec.add("This");
-        vec.add("is");
-        vec.add("a");
-        vec.add("vector");
-        System.out.println(vec);
-        System.out.println(vec.size());
-        System.out.println(vec.capacity());
+        Vector<Integer> vec = new Vector<>(2);
+      for(int i =0;i <= 5;i++)
+      {
+          vec.add(i);
+      }
 
-
-
+    System.out.println(vec);
 
     }
 }
