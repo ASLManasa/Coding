@@ -44,12 +44,14 @@ public class first_and_last_occurence_using_Binary_search
     public static void main (String [] args)
     {
         int arr[] = {1, 2, 2, 2, 2,3, 4, 7, 8, 8};
-        int x = 8;
+        int x = 2;
         int n = arr.length;
         System.out.println("First occurence:");
       System.out.println(first_occurence(arr,x,n));
         System.out.println("last occurence:");
        System.out.println( last_occurence(arr,x,n));
+       int count = last_occurence(arr,x,n)-first_occurence(arr,x,n) +1;
+        System.out.println( count);
 
 
     }
