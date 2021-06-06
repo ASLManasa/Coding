@@ -1,8 +1,12 @@
 package Arrays;
+
+import java.util.HashSet;
+
 /* Approach -1  time complexity - o(n+m)*/
 public class union_of_2_arrays {
     public static void union(int arr1[], int arr2[]) {
-        int i = 0;
+        /*Appproach -1 */
+       int i = 0;
         int j = 0;
         int m = arr1.length;
         int n = arr2.length;
@@ -27,6 +31,17 @@ public class union_of_2_arrays {
             System.out.println(arr1[i++]);
         if ( j < n)
             System.out.println(arr2[j++]);
+      /*Approach -2
+      HashSet<Integer> union = new HashSet<>();
+        for(int i =0 ;i<arr1.length;i++)
+        {
+            union.add(arr1[i]);
+        }
+        for(int i =0 ;i<arr2.length;i++)
+        {
+            union.add(arr2[i]);
+        }
+        System.out.print(union);*/
     }
 
     public static void main(String[] args) {
