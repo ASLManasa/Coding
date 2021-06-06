@@ -5,7 +5,8 @@ import java.util.HashSet;
 public class intersection_of_two_arrays {
     public static void intersection(int[] arr1, int arr2[]) {
 
-       /* int m = arr1.length;
+       /* Approach -1   brute force */
+        int m = arr1.length;
         int n = arr2.length;
         int i = 0;
         int j = 0;
@@ -18,6 +19,19 @@ public class intersection_of_two_arrays {
             else {
                 System.out.print(arr2[j++] +" ");
                 i++;
+            }
+        }
+       /* Approach -2 : Using Hashset
+       HashSet <Integer> intersection = new HashSet<>();
+        for(int i=0;i<arr1.length;i++)
+        {
+            intersection.add(arr1[i]);
+        }
+        for(int j =0;j< arr2.length ;j++)
+        {
+            if(intersection.contains(arr2[j]))
+            {
+                System.out.print(arr2[j] +" ");
             }
         }*/
     }
