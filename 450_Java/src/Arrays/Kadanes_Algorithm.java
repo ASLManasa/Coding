@@ -29,7 +29,7 @@ public class Kadanes_Algorithm
     }
     public static void main(String [] args)
     {
-        int arr[] = new int[]{-2, -3, 4, -1, -2, 1, -3};
+        int arr[] = new int[]{1,2,3,-2,5};
         System.out.println("The maximum sum is: "+ max_subarray(arr));
     }
 }
