@@ -1,5 +1,6 @@
 package Arrays;
 import java.math.*;
+/*Another approach can be using bitwise or an temporary array*/
 public class Factorial
 {
     public static BigInteger fact(int n)
