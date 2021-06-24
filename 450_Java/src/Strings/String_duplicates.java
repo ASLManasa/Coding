@@ -22,7 +22,7 @@ public class String_duplicates
             freq[i] = 1;
             for (int j = i + 1; j < s.length(); j++) {
 
-                if (ch[i] == ch[j]) {
+                if (ch[i] == ch[j] && ch[i]!=' ') {
                     freq[i]++;
                     ch[j] = '0';
                 }
@@ -36,7 +36,7 @@ public class String_duplicates
         }*/
         for(int i =0;i< freq.length;i++)
         {
-            if(freq[i] >1) {
+            if(freq[i] >1 && ch[i] != '0') {
                 System.out.println(ch[i]);
             }
             else
