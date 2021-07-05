@@ -17,7 +17,7 @@ public class permutations_using_recursion {
     }
 
     public static void main(String[] args) {
-        String s = "abc";
+        String s = "123";
         permute(s, " ");
     }
 }
