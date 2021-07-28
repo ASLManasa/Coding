@@ -1,5 +1,6 @@
 package Trees;
 
+import java.util.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -24,7 +25,7 @@ class Graph_Bfs {
     void printGraph() {
         for (int i = 0; i < V; i++) {
             System.out.print("Nodes i :");
-            for (int x : graph.get(i)) System.out.print("->" + x);
+            for (int x : graph.get(i)) System.out.print(" ->" + x);
             System.out.println();
         }
     }
@@ -66,20 +67,30 @@ class Graph_Bfs {
 
 public class Bfs {
     public static void main(String[] args) {
-        Graph_Bfs g = new Graph_Bfs(5);
+        Graph_Bfs g = new Graph_Bfs(7);
 
 
-        g.addEdge(0, 1);
-        g.addEdge(0, 2);
         g.addEdge(1, 2);
-        g.addEdge(2, 0);
-        g.addEdge(2, 3);
-        g.addEdge(3, 3);
+        g.addEdge(1, 3);
+        g.addEdge(2, 4);
+        g.addEdge(2, 5);
+        g.addEdge(3, 5);
+        g.addEdge(4, 6);
+        g.addEdge(5, 6);
+        g.addEdge(4, 5);
         g.printGraph();
         System.out.println();
-        g.BFS(0);
+        long start1 = System.nanoTime();
+        g.BFS(1);
+        long end1 = System.nanoTime();
         System.out.println();
-        g.Dfs(2);
+        System.out.print("Elapsed Time in nano seconds:  " + (end1 - start1));
+        System.out.println();
+        long start2 = System.nanoTime();
+        g.Dfs(1);
+        long end2 = System.nanoTime();
+        System.out.println();
+        System.out.println("Elapsed Time in nano seconds:  " + (end2 - start2));
 
 
     }
