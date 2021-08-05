@@ -1,6 +1,6 @@
-package LinkedLIst;
+package Arrays;
 
-public class ReverseRecursiveLinkedList
+public class Next_Permutation
 {
     public static void main(String [] args)
     {

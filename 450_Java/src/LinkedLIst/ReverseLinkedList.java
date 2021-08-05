@@ -8,16 +8,14 @@ public class ReverseLinkedList {
         int data;
         Node next;
 
-        Node(int d)
-        {
+        Node(int d) {
             data = d;
             next = null;
         }
     }
 
     /* Function to reverse the linked list */
-    Node reverse(Node node)
-    {
+    Node reverse(Node node) {
         Node prev = null;
         Node current = node;
         Node next = null;
@@ -31,9 +29,19 @@ public class ReverseLinkedList {
         return node;
     }
 
+    static Node reverse_recursive(Node node) {
+        if (node == null || node.next == null)
+            return node;
+        Node rest = reverse_recursive(node.next);
+        node.next.next = node;
+
+        node.next = null;
+        return rest;
+
+    }
+
     // prints content of double linked list
-    void printList(Node node)
-    {
+    void printList(Node node) {
         while (node != null) {
             System.out.print(node.data + " ");
             node = node.next;
@@ -52,6 +60,10 @@ public class ReverseLinkedList {
         head = list.reverse(head);
         System.out.println("");
         System.out.println("Reversed linked list ");
+        list.printList(head);
+        head = list.reverse_recursive(head);
+        System.out.println("");
+        System.out.println("Reversed linked list Recursive: ");
         list.printList(head);
     }
 }
