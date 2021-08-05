@@ -58,7 +58,7 @@ public class linkedList {
         sList.addNode(3);
         sList.addNode(4);
 
-        //Displays the nodes present in the list
+
         sList.display();
     }
 }
