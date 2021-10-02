@@ -24,15 +24,12 @@ public class first_and_last_position {
         System.out.println(Arrays.toString(reverse));
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == x)
-                System.out.println("first occurence : " + (i+1));
-            break;
+                System.out.println("first occurence : " + (i + 1));
 
-        }
-        for (int i = 0; i < arr.length; i++) {
-            if (reverse[i] == x)
-                System.out.println("last occurence : " + (n-i));
             break;
-
         }
+
+
+
     }
 }

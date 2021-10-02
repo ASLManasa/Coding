@@ -11,7 +11,7 @@ public class Factorial
     }
     public static void main (String [] args)
     {
-        int x =5;
+        int x =17;
         System.out.println(fact(x));
     }
 }

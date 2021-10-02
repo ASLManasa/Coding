@@ -4,7 +4,7 @@ public class Reversing_a_matrix_90deg_anticockwise
 {
     public static void anti90(int matrix[][])
     {
-        int temp[][] = new int[4][4];
+        int temp[][] = new int[3][3];
         for(int i =0;i<matrix.length;i++)
         {
             for(int j =0;j<matrix[i].length;j++)
@@ -25,8 +25,7 @@ public class Reversing_a_matrix_90deg_anticockwise
         {
             for(int  j =0;j< matrix[i].length;j++)
             {
-                matrix[i][j] = temp[matrix.length-i-1][j];
-            }
+                matrix[i][j] = temp[i][matrix.length-j-1];            }
         }
         System.out.println("Rotated Matrix");
         for(int i =0;i< matrix.length;i++)
@@ -40,7 +39,7 @@ public class Reversing_a_matrix_90deg_anticockwise
     }
     public static void main(String [] args)
     {
-        int matrix [][] = new int[][]{{4,8,12,16},{3,7,11,12},{2,6,10,14},{1,5,9,13}};
+        int matrix [][] = new int[][]{{1,2,3},{4,5,6},{7,8,9}};
         System.out.println("Matrix1");
         for(int i =0;i< matrix.length;i++)
         {

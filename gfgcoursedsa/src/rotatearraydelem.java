@@ -9,10 +9,6 @@ public class rotatearraydelem
         {
             temp[i] = arr[i];
         }
-       /* for(int i =0;i<d;i++)
-        {
-            System.out.println(temp[i]+" ");
-        }*/
 
         for(int j =0;j<n-d;j++)
         {

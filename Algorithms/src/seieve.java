@@ -13,10 +13,9 @@ public class seieve {
                 }
         }
         System.out.println("the prime numbers are:");
-        for(int i =0;i< prime.length;i++)
-        {
-            if(prime[i] == true)
-                System.out.println(i+" ");
+        for (int i = 0; i < prime.length; i++) {
+            if (prime[i] == true)
+                System.out.println(i + " ");
         }
 
 

@@ -7,6 +7,8 @@ public class matrix1
         Scanner sc = new Scanner(System.in);
         int r = sc.nextInt();
         int c = sc.nextInt();
+        System.out.print("Enter the value of k :");
+        int k = sc.nextInt();
         int arr [][] = new int[r][c];
         for(int i =0 ;i <r;i++)
         {
@@ -23,5 +25,6 @@ public class matrix1
             }
             System.out.print("\n");
         }
+
     }
 }
