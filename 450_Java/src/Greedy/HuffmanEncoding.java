@@ -36,9 +36,9 @@ public class HuffmanEncoding {
         Scanner s = new Scanner(System.in);
 
         // number of characters.
-        int n = 6;
-        char[] charArray = {'a', 'b', 'c', 'd', 'e', 'f'};
-        int[] charfreq = {5, 9, 12, 13, 16, 45};
+        int n = 4;
+        char[] charArray = {'a', 'b', 'c', 'd'};
+        int[] charfreq = {19,35,24,22};
         PriorityQueue<HuffmanNode> q = new PriorityQueue<HuffmanNode>(n, new MyComparator());
         for (int i = 0; i < n; i++) {
             HuffmanNode hn = new HuffmanNode();

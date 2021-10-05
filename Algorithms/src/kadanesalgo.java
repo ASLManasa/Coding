@@ -21,7 +21,7 @@ public class kadanesalgo
     }
     public static  void main(String [] args)
     {
-       int a[] ={1,2,3,-2,5};
+       int a[] ={2, -1, 3, -4, 1, -2, -1, 5, -4};
        // int n = a.length;
         System.out.print("The maximum sum will be :"+maxofsubarray(a));
     }
