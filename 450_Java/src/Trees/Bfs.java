@@ -68,8 +68,6 @@ class Graph_Bfs {
 public class Bfs {
     public static void main(String[] args) {
         Graph_Bfs g = new Graph_Bfs(7);
-
-
         g.addEdge(1, 2);
         g.addEdge(1, 3);
         g.addEdge(2, 4);
