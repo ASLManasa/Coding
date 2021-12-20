@@ -22,7 +22,7 @@ public class union_intersection
         System.out.println("The union set of both arrays is :");
         for(Map.Entry mapElement : mp.entrySet())
         {
-            System.out.print(mapElement.getKey() + " ");
+            System.out.print(mapElement.getKey() + " "+mapElement.getValue());
 
 
         }
